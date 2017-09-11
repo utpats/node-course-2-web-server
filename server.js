@@ -59,6 +59,12 @@ app.get('/about', (req, res) => {
   })
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Project Portfolio Page'
+  })
+});
+
 
 
 // /bad - send back error with errorMessage
